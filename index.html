@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperHeros Sortable</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- <nav class="nav"> -->
+    <!-- <h1>SuperHeros Sortable</h1> -->
+    <!-- <div><span id='date-time'></span></div> -->
+    <!-- </nav> -->
+    <div class="wrapper">
+        <marquee behavior="alternate"><span class="marquee">SuperHeroes Sortable Raid</span></marquee>
+    </div>
+    <br>
+    <div class="topnav">
+        <input type="text" id="mySearch" onkeyup="lookup()" placeholder="Name Search" />
+    </div>
+    <br>
+    <div id="app">
+        <div>
+            <!-- <label for="size">Rows per page: </label> -->
+            <label>
+                <h2>Rows per page:<h2>
+
+                        <select name="size" id="size" aria-placeholder="Select size">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="all">all</option>
+                        </select>
+            </label>
+            <button id="prevButton">PREVIOUS</button>
+            <button id="nextButton">NEXT</button>
+
+        </div>
+
+        <br />
+
+        <div class="tableContainer">
+            <table id="heroInfo">
+                <thead>
+                    <tr id="columns">
+                        <th>No.</th>
+                        <th>Image</th>
+                        <th data-sort="name">Name</th>
+                        <th data-sort="biography" id="fullName">Full Name</th>
+                        <th data-sort="powerstats" id="intelligence">Intelligence</th>
+                        <th data-sort="powerstats" id="strength">Strength</th>
+                        <th data-sort="powerstats" id="speed">Speed</th>
+                        <th data-sort="powerstats" id="durability">Durability</th>
+                        <th data-sort="powerstats" id="power">Power</th>
+                        <th data-sort="powerstats" id="combat">Combat</th>
+                        <th data-sort="appearance" id="race">Race</th>
+                        <th data-sort="appearance" id="gender">Gender</th>
+                        <th data-sort="appearance" id="height">Height</th>
+                        <th data-sort="appearance" id="weight">Weight</th>
+                        <th data-sort="biography" id="placeOfBirth">Place of Birth</th>
+                        <th data-sort="biography" id="alignment">Alignment</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="sortable.js"></script>
+</body>
+
+</html>

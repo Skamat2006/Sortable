@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(201, 15, 15);
+}
+
+h2 {
+  margin-left: 110px;
+}
+
+#size {
+  /* background-color: rgb(188, 187, 111); */
+  background-color: whitesmoke;
+  width: 5%;
+  height: 12%;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bolder;
+  margin-left: 0.1%;
+}
+
+#prevButton,
+#nextButton {
+  border-radius: 6px;
+  background-color: whitesmoke;
+  width: 5%;
+  height: 12%;
+  font-weight: bolder;
+  box-shadow: inset;
+  border-color: rgb(7, 202, 202);
+
+}
+
+#heroInfo {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  font-weight: bolder;
+}
+
+#heroInfo td,
+#heroInfo th {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+#heroInfo tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+#heroInfo tr:hover {
+  background-color: #ddd;
+}
+
+#heroInfo th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+
+.tableContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: #222222;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1%;
+}
+
+/* #mySearch, */
+.topnav {
+  justify-content: center;
+  display: flex;
+}
+
+#mySearch {
+  padding: auto;
+  border-radius: 10%;
+  min-height: 40px;
+  min-width: 60px;
+  justify-content: center;
+  display: flex;
+  background-color: whitesmoke;
+  font-weight: bolder;
+  font-size: medium;
+
+}
+
+.rowsize {
+  background-color: rgb(188, 187, 111)
+}
+
+th {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 100%;
+  background: black;
+  height: 80px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.marquee {
+  color: white;
+  background: black;
+  white-space: nowrap;
+  -webkit-animation: rightThenLeft 4s linear;
+}
